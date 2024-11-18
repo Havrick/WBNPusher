@@ -1,6 +1,12 @@
 # WBNPusher
-Script to push printscreen's from a automated machine software into a server.
+Script to Automatically Save Screenshots of an Industrial Oven's Software Interface to a Server
 
-This script is very specific for a specific sofware. This script makes my life a little easier.
+This script is tailored for a specific industrial oven software and simplifies my workflow significantly.
 
-What this script makes is wait that a Sofware is in the Graphic from a industrial oven and uses the snipping tool to take a screenshot of this graphic and saves it to a server path.
+Its purpose is to monitor when the software displays the oven's graphical data, automatically use the Snipping Tool to capture a screenshot of the graphic, and then save it to a specified server path.
+
+# The things that i want to improve:
+  - Comment the code to be easier to understand;
+  - add a debug tool;
+  - add about section;
+    
