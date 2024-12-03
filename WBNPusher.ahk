@@ -1,10 +1,12 @@
-﻿dir = R:\AMS_PDFExport
+dir = R:\AMS_PDFExport
 compGui()
 {
 	Gui, -Caption 
 	Gui,+AlwaysOnTop
 	Gui, Add, Button,w80 ,Export
-	Gui, Add, Button,w80 ,DebugExport
+	Gui, Add, Button,w80 ,About 
+	;Gui, Add, Button,w80 ,DebugExport  ;debugbutton not needed
+	
 	Gui, Show, x1232 y590
 }
 
@@ -26,10 +28,8 @@ return
 ButtonExport:
 Gui, destroy
 InputBox, UserInput, AMS, AMS?, , 100, 150
-if ErrorLevel
-    MsgBox, CANCEL was pressed.
-	
-else{
+if !ErrorLevel
+{
 BlockInput, On
 WinActivate, rapp_cem
 WinActivate, Bericht
@@ -55,6 +55,7 @@ Send {Alt}{Down}{Down}{Down}{Down}{Enter}
 BlockInput, Off
 }
 return
+/* debugbutton not needed
 ButtonDebugExport:
 Gui, destroy
 InputBox, UserInput, AMS, AMS?, , 100, 150
@@ -87,5 +88,7 @@ Send {Tab}{Tab}{Enter}
 Send {Alt}{Down}{Down}{Down}{Down}{Enter}
 BlockInput, Off
 }
-
+*/
+ButtonAbout:
+Run, https://github.com/MAFernCosta/WBNPusher
 
