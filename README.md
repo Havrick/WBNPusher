@@ -5,8 +5,4 @@ This script is tailored for a specific industrial oven software and simplifies m
 
 Its purpose is to monitor when the software displays the oven's graphical data, automatically use the Snipping Tool to capture a screenshot of the graphic, and then save it to a specified server path.
 
-# The things that i want to improve:
-  - Comment the code to be easier to understand;
-  - add a debug tool;
-  - add about section;
-    
+
